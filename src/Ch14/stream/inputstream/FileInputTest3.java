@@ -14,9 +14,9 @@ public class FileInputTest3 {
 			int i;
 			byte[] bs = new byte[10];
 			while( (i = fis.read(bs)) != -1 ) {
-				for(byte b : bs) {
-					System.out.print((char)b);
-				}
+				/*
+				 * for(byte b : bs) { System.out.print((char)b); }
+				 */
 				System.out.println("i : " + i);
 				
 				for(int k=0; k<i; k++) {
