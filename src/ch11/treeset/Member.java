@@ -1,6 +1,8 @@
-package ch11.set;
+package ch11.treeset;
 
-public class Member {
+import java.util.Comparator;
+
+public class Member implements Comparator<Member> {
 
 	private int memberId;
 	private String memberName;
@@ -40,6 +42,16 @@ public class Member {
 			return (this.memberId == member.memberId);
 		}
 		return false;
+	}
+	
+//	@Override
+//	public int compareTo(Member member) {
+//		return this.memberName.compareTo(member.getMemberName());
+//	}
+	
+	@Override
+	public int compare(Member member1, Member member2) {
+		return (member1.memberId - member2.memberId);
 	}
 	
 	
