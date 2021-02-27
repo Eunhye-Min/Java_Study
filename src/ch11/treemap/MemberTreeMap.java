@@ -25,7 +25,6 @@ public class MemberTreeMap {
 	}
 	
 	public void showAllMember() {
-		//hashMap.keySet(); //중복 X므로 Set으로 반환됨 cf. values()는 collection으로
 		Iterator<Integer> ir = treeMap.keySet().iterator();
 		while(ir.hasNext()) {
 			int key= ir.next();

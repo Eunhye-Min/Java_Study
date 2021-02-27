@@ -54,7 +54,7 @@ public class InnerTest {
 		 System.out.println();
 		 
 		 OutClass.InStaticClass sInClass = new OutClass.InStaticClass();
-		 myInClass.inTest();	//static메서드가 아니므로 내부에서 static클래스 생성 후 호출해야 함
+		 sInClass.inTest();	//static메서드가 아니므로 내부에서 static클래스 생성 후 호출해야 함
 		 System.out.println();
 		 
 		 OutClass.InStaticClass.sTest();//생성 없이 그대로 쓸 수 있음
