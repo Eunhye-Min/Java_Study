@@ -15,10 +15,7 @@ public class MemberHashMapTest {
 	manager.addMember(memberKim);
 	manager.addMember(memberPark);
 	manager.addMember(memberPark2);
-	
-	manager.showAllMember();
-	
-	manager.removeMember(200);
+
 	manager.showAllMember();
 	
 	}
