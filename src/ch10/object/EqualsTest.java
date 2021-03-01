@@ -39,15 +39,15 @@ public class EqualsTest {
 		System.out.println(Lee.hashCode());
 		System.out.println(Shin.hashCode());
 		
-		Integer i1 = 100;
-		Integer i2 = 100;
+		Integer i3 = 200;
+		Integer i4 = 200;
 		
-		System.out.println(i1.equals(i2));
-		System.out.println(i1.hashCode());
-		System.out.println(i2.hashCode());
+		System.out.println(i3.equals(i4));
+		System.out.println(i3.hashCode());
+		System.out.println(i4.hashCode());
 		
-		System.out.println(System.identityHashCode(i1));
-		System.out.println(System.identityHashCode(i2));
+		System.out.println(System.identityHashCode(i3));
+		System.out.println(System.identityHashCode(i4));
 	}
 
 }
