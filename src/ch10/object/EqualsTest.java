@@ -17,7 +17,11 @@ class Student{
 		}
 		return false;
 	}
-	
+
+	@Override
+	public int hashCode() {
+		return studentNum;
+	}
 	
 }
 
@@ -31,6 +35,19 @@ public class EqualsTest {
 		
 		System.out.println(Lee == Shin);	//false (拱府利 林家 促抚)
 		System.out.println(Lee.equals(Shin));
+		
+		System.out.println(Lee.hashCode());
+		System.out.println(Shin.hashCode());
+		
+		Integer i1 = 100;
+		Integer i2 = 100;
+		
+		System.out.println(i1.equals(i2));
+		System.out.println(i1.hashCode());
+		System.out.println(i2.hashCode());
+		
+		System.out.println(System.identityHashCode(i1));
+		System.out.println(System.identityHashCode(i2));
 	}
 
 }
